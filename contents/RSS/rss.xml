@@ -1,0 +1,11 @@
+<?xml version= "1.0"?>
+
+<rss version= "2.0">
+    <channel>
+        <item>
+            <title> Rulebroken updates </title>
+            <description> i figured out how to make these </description>
+            <link>the rulebroken url will go here</link>
+        </item>
+    </channel>
+</rss>
