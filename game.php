@@ -27,6 +27,7 @@
                 case 'delete':
                     setcookie("pgid", "", time() - 3600);
                     setcookie("game", "", time() - 3600);
+                    header('Location: http://www.rulebroken.net/p/'. $pgid . '.php');
                     break;
                 default: echo "whoops! try again";
             };

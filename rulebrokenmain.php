@@ -319,7 +319,7 @@ What will the name of this young man be?
 </a></font><br>
 		
 			<br><br>
-			<span style="font-size: 10px;"><b><a href="?game=save&s=6&p=001901"><font color="#0000FF">Save Game</font></a> <a href="" onClick="window.open('popups/save.php', 'popup', 'width=300,height=300,scrollbars=yes')"><font color="#0000FF">(?)</font></a></b> | <b><a href="?game=autosave&s=6&p=001901"><font color="#0000FF">Auto-Save!</font></a> <a href="" onClick="window.open('popups/autosave.php', 'popup', 'width=300,height=300,scrollbars=yes')"><font color="#0000FF">(?)</font></a></b> | <b><a href="?game=load&s=6&p=001901"><font color="#0000FF">Load Game</font></a></b> | <b><a href="?game=delete&s=6&p=001901"><font color="#0000FF">Delete Game Data</font></a></b></span>	
+			<span style="font-size: 10px;"><b><a href="/game.php?game=save&pgid=000001"><font color="#0000FF">Save Game</font></a> <a href="" onClick="window.open('popups/save.php', 'popup', 'width=300,height=300,scrollbars=yes')"><font color="#0000FF">(?)</font></a></b> | <b><a href="/game.php?game=autosave&pgid=000001"><font color="#0000FF">Auto-Save!</font></a> <a href="" onClick="window.open('popups/autosave.php', 'popup', 'width=300,height=300,scrollbars=yes')"><font color="#0000FF">(?)</font></a></b> | <b><a href="/game.php?game=load"><font color="#0000FF">Load Game</font></a></b> | <b><a href="/game.php?game=delete&pgid=001901"><font color="#0000FF">Delete Game Data</font></a></b></span>	
 			<br>	
 		    </td>
 		    </tr>
