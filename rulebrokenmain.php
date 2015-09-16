@@ -14,6 +14,7 @@
 <link rel="stylesheet" type="text/css" href="Stylesheets/content.css">
 
 <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
 <!-- references for mobile device images n stuff -->
 
