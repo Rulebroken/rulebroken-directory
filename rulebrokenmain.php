@@ -10,6 +10,8 @@
 <head>
 <meta charset="utf8">
 <title>Rulebroken</title>
+<?php
+?>
 
 <link rel="stylesheet" type="text/css" href="Stylesheets/content.css">
 
