@@ -10,6 +10,21 @@
 <head>
 <meta charset="utf8">
 <title>Rulebroken</title>
+<?php
+
+$game = $_COOKIE["game"];
+$id = 000001;
+$saveID = $_COOKIE["pgid"];
+// checks for autosave
+if ($game == "autosave"){
+    // checks if the saved value is less than the id of the page
+    if ($id > $saveID){
+        // sets it if true
+        setcookie("pgid", $id);
+    };
+};
+
+?>
 
 
 <link rel="stylesheet" type="text/css" href="../Stylesheets/content.css">
@@ -224,7 +239,7 @@ What will the name of this young man be?
 </a></font><br>
 		
 			<br><br>
-			<span style="font-size: 10px;"><b><a href="?game=save&s=6&p=001901"><font color="#0000FF">Save Game</font></a> <a href="" onClick="window.open('popups/save.php', 'popup', 'width=300,height=300,scrollbars=yes')"><font color="#0000FF">(?)</font></a></b> | <b><a href="?game=autosave&s=6&p=001901"><font color="#0000FF">Auto-Save!</font></a> <a href="" onClick="window.open('popups/autosave.php', 'popup', 'width=300,height=300,scrollbars=yes')"><font color="#0000FF">(?)</font></a></b> | <b><a href="?game=load&s=6&p=001901"><font color="#0000FF">Load Game</font></a></b> | <b><a href="?game=delete&s=6&p=001901"><font color="#0000FF">Delete Game Data</font></a></b></span>
+			<span style="font-size: 10px;"><b><a href="?game=save&s=6&p=000001"><font color="#0000FF">Save Game</font></a> <a href="" onClick="window.open('popups/save.php', 'popup', 'width=300,height=300,scrollbars=yes')"><font color="#0000FF">(?)</font></a></b> | <b><a href="?game=autosave&s=6&p=000001"><font color="#0000FF">Auto-Save!</font></a> <a href="" onClick="window.open('popups/autosave.php', 'popup', 'width=300,height=300,scrollbars=yes')"><font color="#0000FF">(?)</font></a></b> | <b><a href="?game=load&s=6&p=000001"><font color="#0000FF">Load Game</font></a></b> | <b><a href="?game=delete&s=6&p=000001"><font color="#0000FF">Delete Game Data</font></a></b></span>
 			<br><br>	
 		    </td>
 		    </tr>

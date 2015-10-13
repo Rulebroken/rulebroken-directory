@@ -11,6 +11,19 @@
 <meta charset="utf8">
 <title>Rulebroken</title>
 <?php
+
+$game = $_COOKIE["game"];
+$id = 000001;
+$saveID = $_COOKIE["pgid"];
+// checks for autosave
+if ($game == "autosave"){
+    // checks if the saved value is less than the id of the page
+    if ($id > $saveID){
+        // sets it if true
+        setcookie("pgid", $id);
+    };
+};
+
 ?>
 
 <link rel="stylesheet" type="text/css" href="Stylesheets/content.css">
@@ -189,12 +202,15 @@
             				
             <center>
 				<!-- ADVENTURE DROPDOWN (unneeded)
+
             			 <span style="font-size: 10px; line-height: normal">
 				 -- <select size="1" name="cid" language="JavaScript" onchange="gotoSite(this)">  <option selected value="http://www.mspaintadventures.com/">Jump to adventure!</option>  <option value="http://www.mspaintadventures.com/?s=1">Jail Break</option>  <option value="http://www.mspaintadventures.com/?s=2">Bard Quest</option>  <option value="http://www.mspaintadventures.com/?s=4">Problem Sleuth</option>  <option value="http://www.mspaintadventures.com/?s=6">Homestuck</option>  </select>  --<br> 
 				 </span>
 		                 ADVENTURE DROPDOWN -->
 						<br>						
         		<!-- cutting out ads n stuff for now. might use it for other things
+
+
         		<a href="http://www.paradoxspace.com/" target="_blank"><img src="http://cdn.mspaintadventures.com/scraps2/paradoxspacelogo_side.gif" alt="" border="0"></a><br>
         		<img src="Images/other/spacer.gif" height="10" alt=""><br>
         		<img src="http://cdn.mspaintadventures.com/images/merchandise.png" alt=""><br>
