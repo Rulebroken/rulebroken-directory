@@ -12,3 +12,11 @@ body {
 #pages {
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
+
+td.links {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    border: 0;
+    vertical-align: top;
+    font-weight: bold;
+}

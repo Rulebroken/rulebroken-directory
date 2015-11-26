@@ -1,7 +1,9 @@
 
 
 
-
+<!-- The Rulebroken site:
+     Original coding: Andrew Hussie
+     Rewriting: Orange Karpusi -->
 
 
 <!doctype html>
@@ -19,43 +21,42 @@ $saveID = $_COOKIE["pgid"];
 if ($game == "autosave"){
     // checks if the saved value is less than the id of the page
     if ($id > $saveID){
-        // sets it if true
         setcookie("pgid", $id);
     };
 };
 
 ?>
 
-<link rel="stylesheet" type="text/css" href="Stylesheets/content.css">
+<link rel="stylesheet" type="text/css" href="s/content.css">
 
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
 <!-- references for mobile device images n stuff -->
 
-<link rel="apple-touch-icon" sizes="57x57" href="Images/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="Images/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="Images/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="Images/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="Images/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="Images/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="Images/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="Images/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="Images/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="Images/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
-<link rel="manifest" href="Images/favicon/manifest.json">
+<link rel="apple-touch-icon" sizes="57x57" href="i/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="i/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="i/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="i/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="i/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="i/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="i/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="i/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="i/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="i/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="i/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="i/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="i/favicon/favicon-16x16.png">
+<link rel="manifest" href="i/favicon/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="Images/favicon/ms-icon-144x144.png">
+<meta name="msapplication-TileImage" content="i/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
 <!-- end image refs -->
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="Scripts/blogupdatesmain.js"></script>
-<script type="text/javascript" src="Scripts/pagesupdatemain.js"></script>
+<script type="text/javascript" src="c/blogupdatesmain.js"></script>
+<script type="text/javascript" src="c/pagesupdatemain.js"></script>
 
 </head>
 
@@ -83,7 +84,7 @@ if ($game == "autosave"){
     <!-- begin header -->
 	<table width="950" height="" border="0" cellpadding="0" cellspacing="0">
     	<tr>
-    		<td background="Images/other/bannerframe.png" bgcolor="efefef" height="110">
+    		<td background="i/other/bannerframe.png" bgcolor="efefef" height="110">
 				<center>
 					<!-- <script type="text/javascript">
 					var images = [],
@@ -101,7 +102,7 @@ if ($game == "autosave"){
 
     	<tr>
     		<td bgcolor="efefef">
-    			<a href="rulebrokenmain.html"><img src="Images/other/headertitle.gif" width="950" height="66" alt="" border="0"></a></td>
+    			<a href="rulebrokenmain.html"><img src="i/other/headertitle.gif" width="950" height="66" alt="" border="0"></a></td>
     	</tr>
     	<tr>
     		<td bgcolor="#c6c6c6" height="7"></td>
@@ -116,24 +117,23 @@ if ($game == "autosave"){
 <td>
     <!-- begin nav -->
     <table width="950" height="17" cellpadding="0" cellspacing="0" border="0" bgcolor="5a5a5a" background="">
-
-
     <tr><td></td></tr>
     <tr>
-    <td border="0" bgcolor="" height="0" valign="top"><center><font face="arial" size="1" color="ffffff"><b>
-    <a href="rulebrokenmain.html"><font color="ffffff">RULEBROKEN</font></a>
-     &nbsp; <img src="Images/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="?viewpage=archive"><font color="29ff4a">ARCHIVE</font></a>
+    <td border="0" bgcolor="" height="0" valign="top" style="font-family: arial; font-size: 11px; color: #ffffff;">
+        <center style="font-family: arial; size: 11px; color: #ffffff"><b>
+    <a href="http://www.mspaintadventures.com/" style="color:#ffffff">RULEBROKEN</a>
+     &nbsp; <img src="i/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="?viewpage=archive" style="color: #29ff4a;">ARCHIVE</font></a>
      | 
     <a href="?viewpage=new"><font color="29ff4a">NEW READER?</font></a>
-     &nbsp; <img src="Images/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="?viewmap=menu"><font color="39d5f6">MAP</font></a> 
+     &nbsp; <img src="i/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="?viewmap=menu"><font color="39d5f6">MAP</font></a> 
     | 
     <a href="?viewlog=menu"><font color="39d5f6">LOG</font></a> 
     | 
     <a href="?search=menu"><font color="39d5f6">SEARCH</font></a> 
-      &nbsp; <img src="Images/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="?viewpage=shop" class="menuanchorclass" rel="shop"><font color="f7f72a">SHOP</font></a> 
+      &nbsp; <img src="i/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="?viewpage=shop" class="menuanchorclass" rel="shop"><font color="f7f72a">SHOP</font></a> 
     | 
     <a href="http://homestuck.bandcamp.com/"><font color="f7f72a">MUSIC</font></a> 
-      &nbsp; <img src="Images/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="http://mspaforums.com"><font color="ffb529">FORUMS</font></a>
+      &nbsp; <img src="i/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="http://mspaforums.com"><font color="ffb529">FORUMS</font></a> 
     | 
     <a href="unlock.html"><font color="ffb529">SECRETS</font></a> 
     | 
@@ -141,8 +141,6 @@ if ($game == "autosave"){
     </b></font></center></td>
     </tr>
     <tr><td></td></tr>
-
-
     </table>
     <!-- end nav -->
 </td>
@@ -174,9 +172,9 @@ if ($game == "autosave"){
             <tr>
             <td bgcolor="" valign="top" height="45">
         		<center>
-        		<img src="Images/other/spacer.gif" height="10" alt=""><br>
-        		<img src="Images/other/latestpages.png" alt="" height="25"><br>
-        		<img src="Images/other/spacer.gif" height="10" alt=""><br></center>
+        		<img src="i/other/spacer.gif" height="10" alt=""><br>
+        		<img src="i/other/latestpages.png" alt="" height="25"><br>
+        		<img src="i/other/spacer.gif" height="10" alt=""><br></center>
         		</td>
         		</tr>
         		<tr>
@@ -212,26 +210,26 @@ if ($game == "autosave"){
 
 
         		<a href="http://www.paradoxspace.com/" target="_blank"><img src="http://cdn.mspaintadventures.com/scraps2/paradoxspacelogo_side.gif" alt="" border="0"></a><br>
-        		<img src="Images/other/spacer.gif" height="10" alt=""><br>
+        		<img src="i/other/spacer.gif" height="10" alt=""><br>
         		<img src="http://cdn.mspaintadventures.com/images/merchandise.png" alt=""><br>
-        		<img src="Images/other/spacer.gif" height="10" alt=""><br>
+        		<img src="i/other/spacer.gif" height="10" alt=""><br>
         		<a href="http://www.whatpumpkin.com/Books/" target="_blank"><img src="http://cdn.mspaintadventures.com/images/sidebanner2012_1.gif" alt="" border="0"></a><br>
-        		<img src="Images/other/spacer.gif" height="10" alt=""><br>
+        		<img src="i/other/spacer.gif" height="10" alt=""><br>
         		<a href="http://www.topatoco.com/merchant.mvc?Screen=CTGY&Store_Code=TO&Category_Code=MSPA" target="_blank"><img src="http://cdn.mspaintadventures.com/images/sidebanner2012_2.gif" alt="" border="0"></a><br>
-        		<img src="Images/other/spacer.gif" height="10" alt=""><br>
+        		<img src="i/other/spacer.gif" height="10" alt=""><br>
         		<a href="http://whatpumpkin.com/home.php" target="_blank"><img src="http://cdn.mspaintadventures.com/images/sidebanner2012_3.gif" alt="" border="0"></a><br>
-        		<img src="Images/other/spacer.gif" height="10" alt=""><br>
+        		<img src="i/other/spacer.gif" height="10" alt=""><br>
         		<a href="http://homestuck.bandcamp.com/" target="_blank"><img src="http://cdn.mspaintadventures.com/images/merchbandcamp.png" alt="" border="0"></a><br> -->
-        		<img src="Images/other/spacer.gif" height="10" alt=""><br>
+        		<img src="i/other/spacer.gif" height="10" alt=""><br>
 
 
-        		<img src="Images/other/spacer.gif" height="10" alt=""><br>
+        		<img src="i/other/spacer.gif" height="10" alt=""><br>
 
         		</center>
         		</td>
             </tr>
             <tr>
-            <td height="7" bgcolor="efefef"></td>
+            <td height="7" bgcolor="#efefef"></td>
             </tr>
             </table> 
         </td>
@@ -271,7 +269,7 @@ if ($game == "autosave"){
 	        <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
 	          <tr>
 	            <td>
-	  		<img src="Images/other/v2_blankstrip.gif" border="0">
+	  		<img src="i/other/v2_blankstrip.gif" border="0">
 	            </td>
 	          <td>
 	            <center>
@@ -280,7 +278,7 @@ if ($game == "autosave"){
 	            </center>
 	          </td>
 	            <td>
-	  		<img src="Images/other/v2_blankstrip.gif" border="0">
+	  		<img src="i/other/v2_blankstrip.gif" border="0">
 	            </td>
 	          </tr>
 	        </table>
@@ -297,7 +295,7 @@ if ($game == "autosave"){
 
 	    <tr>
 	    <td bgcolor="#EEEEEE">
-		<img src="Images/other/v2_blanksquare2.gif" border="0">
+		<img src="i/other/v2_blanksquare2.gif" border="0">
 	    </td>
 	    </tr>
 
@@ -324,7 +322,7 @@ What will the name of this young man be?
 	    </tr>
 
     	    <tr>
-    	    <td width="100%"><img src="Images/other/v2_blanksquare3.gif" border="0"></td>
+    	    <td width="100%"><img src="i/other/v2_blanksquare3.gif" border="0"></td>
     	    </tr>
 
 	    <tr>
@@ -355,7 +353,7 @@ What will the name of this young man be?
             		</td>
 								</tr>
                 <tr>
-                <td><img src="Images/other/spacer.gif" height="20" alt=""></td>
+                <td><img src="i/other/spacer.gif" height="20" alt=""></td>
                 </tr>								
 								<tr>
 								<td>
@@ -366,7 +364,7 @@ What will the name of this young man be?
 								</td>
 								</tr>
                 <tr>
-                <td><img src="Images/other/spacer.gif" height="10" alt=""></td>
+                <td><img src="i/other/spacer.gif" height="10" alt=""></td>
                 </tr>
                 <tr>
                 <td height="7" bgcolor="c6c6c6"></td>
@@ -398,7 +396,7 @@ What will the name of this young man be?
                     <table width="454" height="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="" background="">
                     <tr>
                     <td valign="middle" height="100"> 
-                    <center><img src="Images/other/news.gif" alt=""></center>
+                    <center><img src="i/other/news.gif" alt=""></center>
                     </td>
                     </tr>
                     <tr>
@@ -439,19 +437,19 @@ What will the name of this young man be?
     <tr>
     <td border="0" bgcolor="" height="0" valign="top" style="font-family: arial; font-size: 11px; color: #ffffff;">
         <center style="font-family: arial; size: 11px; color: #ffffff"><b>
-    <a href="http://www.mspaintadventures.com/" style="color:#ffffff">MS PAINT ADVENTURES</a>
-     &nbsp; <img src="Images/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="?viewpage=archive" style="color: #29ff4a;">ARCHIVE</font></a>
+    <a href="http://www.mspaintadventures.com/" style="color:#ffffff">RULEBROKEN</a>
+     &nbsp; <img src="i/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="?viewpage=archive" style="color: #29ff4a;">ARCHIVE</font></a>
      | 
     <a href="?viewpage=new"><font color="29ff4a">NEW READER?</font></a>
-     &nbsp; <img src="Images/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="?viewmap=menu"><font color="39d5f6">MAP</font></a> 
+     &nbsp; <img src="i/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="?viewmap=menu"><font color="39d5f6">MAP</font></a> 
     | 
     <a href="?viewlog=menu"><font color="39d5f6">LOG</font></a> 
     | 
     <a href="?search=menu"><font color="39d5f6">SEARCH</font></a> 
-      &nbsp; <img src="Images/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="?viewpage=shop" class="menuanchorclass" rel="shop"><font color="f7f72a">SHOP</font></a> 
+      &nbsp; <img src="i/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="?viewpage=shop" class="menuanchorclass" rel="shop"><font color="f7f72a">SHOP</font></a> 
     | 
     <a href="http://homestuck.bandcamp.com/"><font color="f7f72a">MUSIC</font></a> 
-      &nbsp; <img src="Images/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="http://mspaforums.com"><font color="ffb529">FORUMS</font></a> 
+      &nbsp; <img src="i/other/candycorn.gif" border="0" align="absmiddle"> &nbsp;    <a href="http://mspaforums.com"><font color="ffb529">FORUMS</font></a> 
     | 
     <a href="unlock.html"><font color="ffb529">SECRETS</font></a> 
     | 
@@ -474,7 +472,7 @@ What will the name of this young man be?
     	<td bgcolor="#c6c6c6" height="7"></td>
     	</tr>
     	<tr>
-    	<td bgcolor="efefef" height="65" valign="bottom"><a href="../rulebrokenmain.html"><img src="Images/other/title.png" width="950" height="66" alt="" border="0"></a></td>
+    	<td bgcolor="efefef" height="65" valign="bottom"><a href="../rulebrokenmain.html"><img src="i/other/title.png" width="950" height="66" alt="" border="0"></a></td>
 			</tr>
 			
     	</tr>
